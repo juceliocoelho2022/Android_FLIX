@@ -32,7 +32,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
     <ImageView
-        android:id="@+id/imageView5"
+        android:id="@+id/imgPerfilSocorro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="108dp"
@@ -52,7 +52,7 @@
         app:srcCompat="@drawable/perfil1" />
 
     <ImageView
-        android:id="@+id/imageView6"
+        android:id="@+id/imgPerfilHeitor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="296dp"
@@ -79,19 +79,19 @@
         android:layout_marginTop="12dp"
         android:text="Socorro"
         android:textColor="@color/white"
-        app:layout_constraintEnd_toEndOf="@+id/imageView5"
-        app:layout_constraintStart_toStartOf="@+id/imageView5"
-        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+        app:layout_constraintEnd_toEndOf="@+id/imgPerfilSocorro"
+        app:layout_constraintStart_toStartOf="@+id/imgPerfilSocorro"
+        app:layout_constraintTop_toBottomOf="@+id/imgPerfilSocorro" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/textViewHeitor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
         android:text="Heitor"
         android:textColor="@color/white"
-        app:layout_constraintEnd_toEndOf="@+id/imageView6"
-        app:layout_constraintStart_toStartOf="@+id/imageView6"
-        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+        app:layout_constraintEnd_toEndOf="@+id/imgPerfilHeitor"
+        app:layout_constraintStart_toStartOf="@+id/imgPerfilHeitor"
+        app:layout_constraintTop_toBottomOf="@+id/imgPerfilHeitor" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

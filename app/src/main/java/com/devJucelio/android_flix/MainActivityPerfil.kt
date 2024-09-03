@@ -1,29 +1,37 @@
 package com.devJucelio.android_flix
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.widget.ImageView
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 
 class MainActivityPerfil : AppCompatActivity() {
 
-    private lateinit var btnDetalhes: ImageView
+    private lateinit var btnDetalhesSidnei: ImageView
+    private lateinit var btnDetalhesHeitor: ImageView
+    private lateinit var btnDetalhesSocorro: ImageView
 
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
         setContentView(R.layout.activity_main_perfil)
 
-        btnDetalhes = findViewById(R.id.imgPerfilSidnei)
+        btnDetalhesSidnei = findViewById(R.id.imgPerfilSidnei)
+        btnDetalhesHeitor = findViewById(R.id.imgPerfilHeitor)
+        btnDetalhesSocorro = findViewById(R.id.imgPerfilSocorro)
 
-        btnDetalhes.setOnClickListener {
+        val intent = Intent(this, MainActivityDetalhes::class.java)
 
-            val perfil01 = Intent(this, MainActivityDetalhes::class.java)
+        btnDetalhesSidnei.setOnClickListener {
+            startActivity(intent)
+        }
 
-            startActivity(perfil01)
+        btnDetalhesHeitor.setOnClickListener {
+            startActivity(intent)
+        }
+        btnDetalhesSocorro.setOnClickListener{
+            startActivity(intent)
         }
     }
 }
